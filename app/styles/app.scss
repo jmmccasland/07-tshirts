@@ -21,6 +21,11 @@ $m-maxcontentwidth: 60rem;
 
 
 
+.shop-card {
+  padding: $m-gutter;
+  border: 0.2rem solid $c-brandprimary;
+  text-align: center;
+}
 
 
 
@@ -36,3 +41,4 @@ $m-maxcontentwidth: 60rem;
 
 
 @import 'box-sizing';
+@import 'resets';

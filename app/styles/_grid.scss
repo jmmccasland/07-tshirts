@@ -1,0 +1,22 @@
+// GRID STYLES
+.container {
+  max-width: $m-maxcontentwidth;
+  margin: 0 auto;
+  // border: 1px solid $c-yellow;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  // margin: 0 -1rem;
+  // border: 1px solid $c-pink;
+
+  &__item {
+    display: flex;
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    justify-content: center;
+    margin: $m-gutter;
+  }
+}
