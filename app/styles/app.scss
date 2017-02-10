@@ -19,15 +19,17 @@ $c-yellow: #e5b178;
 $m-gutter: 1rem;
 $m-maxcontentwidth: 60rem;
 
+@import 'box-sizing';
+@import 'resets';
+@import 'grid';
+@import 'shopcard';
+
+
 
 @media (min-width: 560px) and (max-width: 764px) {
 
   .grid {
     flex-direction: column;
-
-    &__item {
-
-    }
   }
 
 
@@ -37,7 +39,7 @@ $m-maxcontentwidth: 60rem;
     justify-content: center;
 
     &__pic {
-      height: 15rem;
+      max-height: 12rem;
     }
 
     &__info {
@@ -50,27 +52,13 @@ $m-maxcontentwidth: 60rem;
   .button-bar {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    border-top: 0;
+    border-left: 0.2rem solid $c-brandprimary;
 
-    &__button {
-      flex-grow: 1;
+    > * + * {
+      border-top: 0.2rem solid $c-brandprimary;
+      border-left: 0;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import 'box-sizing';
-@import 'resets';
-@import 'grid';
-@import 'shopcard';
