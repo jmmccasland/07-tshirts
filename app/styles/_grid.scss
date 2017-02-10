@@ -1,4 +1,9 @@
 // GRID STYLES
+
+.section {
+  padding: $m-gutter * 2;
+}
+
 .container {
   max-width: $m-maxcontentwidth;
   margin: 0 auto;
@@ -9,8 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
-  // margin: 0 -1rem;
+  margin: -1rem;
   // border: 1px solid $c-pink;
 
   &__item {
