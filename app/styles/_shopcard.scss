@@ -52,6 +52,16 @@
 .dropdown {
   position: relative;
 
+  &:hover {
+    background: $c-brandprimary;
+    color: $c-brandwhite;
+
+    > .dropdown__list {
+      display: block;
+      color: $c-brandprimary;
+    }
+  }
+
   &__list {
     display: none;
     position: absolute;
@@ -90,12 +100,6 @@
 
     &--yellow {
       color: $c-yellow;
-    }
-  }
-
-  &:hover {
-    > .dropdown__list {
-      display: block;
     }
   }
 }
