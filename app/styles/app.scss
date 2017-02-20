@@ -67,12 +67,10 @@ $m-maxcontentwidth: 60rem;
     }
 
     &__list {
-
       top: 50%;
       left: 0;
       transform: translate(-100%, -50%);
       border: 0.2rem solid $c-brandprimary;
-
 
       > * + * {
         border-top: 0;
