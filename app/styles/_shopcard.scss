@@ -1,0 +1,105 @@
+
+// SHOP CARD
+.shop-card {
+  border: 0.2rem solid $c-brandprimary;
+  color: $c-brandprimary;
+  text-align: center;
+
+  &__pic {
+    max-height: 15rem;
+    padding: $m-gutter;
+  }
+
+  &__info {
+    margin-top: 0;
+    padding: 0 $m-gutter;
+
+    > * {
+      margin-top: 0;
+    }
+  }
+}
+
+
+
+// STATIC BUTTON BAR STYLES
+.button-bar {
+  display: flex;
+  border-top: 0.2rem solid $c-brandprimary;
+
+  > * {
+    border: 0;
+  }
+
+  > * + * {
+    border-left: 0.2rem solid $c-brandprimary;
+  }
+
+  &__button {
+    flex-basis: calc(100% / 5);
+    flex-grow: 1;
+
+    padding: 0.5rem 1rem;
+    background: $c-brandwhite;
+    color: $c-brandprimary;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+// DROPDOWN LIST AND BUTTON STYLES
+.dropdown {
+  position: relative;
+
+  &:hover {
+    background: $c-brandprimary;
+    color: $c-brandwhite;
+
+    > .dropdown__list {
+      display: block;
+      color: $c-brandprimary;
+    }
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -100%);
+    border: 0.2rem solid $c-brandprimary;
+    background: $c-brandwhite;
+
+    > * + * {
+      border-top: 0.2rem solid $c-brandprimary;
+    }
+  }
+
+  &__button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+
+    &:hover {
+      font-size: 1.5rem;
+    }
+
+    // Button Colors
+    &--pink {
+      color: $c-pink;
+    }
+
+    &--green {
+      color: $c-green;
+    }
+
+    &--blue {
+      color: $c-blue;
+    }
+
+    &--yellow {
+      color: $c-yellow;
+    }
+  }
+}

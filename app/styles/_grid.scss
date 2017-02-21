@@ -1,0 +1,26 @@
+// GRID STYLES
+
+.section {
+  padding: $m-gutter * 2;
+}
+
+.container {
+  max-width: $m-maxcontentwidth;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -1rem;
+
+  &__item {
+    display: flex;
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    flex-grow: 1;
+    justify-content: center;
+    min-width: 18rem;
+    margin: $m-gutter;
+  }
+}

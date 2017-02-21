@@ -1,6 +1,86 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
+
+
+
+// COLORS
+$c-brandprimary: #3473b5;
+$c-brandwhite: #fff;
+$c-pink: #e577aa;
+$c-blue: #72bbe9;
+$c-green: #7abe93;
+$c-yellow: #e5b178;
+
+// MEASUREMENTS
+$m-gutter: 1rem;
+$m-maxcontentwidth: 60rem;
+
 @import 'box-sizing';
+@import 'resets';
+@import 'grid';
+@import 'shopcard';
+
+
+
+@media (min-width: 560px) and (max-width: 764px) {
+
+  .grid {
+    flex-direction: column;
+  }
+
+
+  .shop-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .button-bar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-top: 0;
+    border-left: 0.2rem solid $c-brandprimary;
+
+    > * + * {
+      border-top: 0.2rem solid $c-brandprimary;
+      border-left: 0;
+    }
+  }
+
+  // DROPDOWN LIST AND BUTTON STYLES
+  .dropdown {
+
+    &:hover {
+      > .dropdown__list {
+        display: flex;
+      }
+    }
+
+    &__list {
+      top: 50%;
+      left: 0;
+      transform: translate(-100%, -50%);
+      border: 0.2rem solid $c-brandprimary;
+
+      > * + * {
+        border-top: 0;
+        border-left: 0.2rem solid $c-brandprimary;
+      }
+    }
+  }
+
+
+
+
+
+}
